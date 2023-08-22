@@ -1,6 +1,6 @@
 # Full Stack E-Commerce Website (Hackathon-1)
 
-This is a Full satck Ecommerce website built built for the learning purpose ofthe state of the art Technologies.
+This is a Full satck Ecommerce website built for the learning purpose of the state of the art Technologies.
 
 ## Stacks
 <p align="left">
@@ -10,7 +10,7 @@ This is a Full satck Ecommerce website built built for the learning purpose ofth
 - NEXT.js 13
 - Tailwind CSS
 - Sanity as Content Management System (CMS)
-- Vercel Postgres as Database
+- Redux Toolkit for store and state managment
 - Stripe for payment integration
 
 
@@ -18,7 +18,7 @@ This is a Full satck Ecommerce website built built for the learning purpose ofth
 ### Link
 
 Website is deployed in vercel.
-- [Live URL](https://ecommerce-sanity-sage.vercel.app/)
+- [Live URL](https://ecommerce-sanity-reduxtoolkit-stripe.vercel.app/)
 
 
 ### Screenshot

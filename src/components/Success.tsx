@@ -4,35 +4,11 @@ import Link from "next/link";
 import { BsBagCheckFill } from "react-icons/bs";
 import { useRouter } from "next/navigation";
 
-const Success = ({ cookiesuid }: { cookiesuid: string | undefined}) => {
+const Success = ({ cookiesuid }: { cookiesuid: string | undefined }) => {
   const { refresh } = useRouter();
+  refresh();
 
-  useEffect(() => {
-    // self invoking function
-  (async function(){
-    try {
-      if (cookiesuid) {
-        const response = await fetch(`/api/success?user_id=${cookiesuid}`, {
-          method: "DELETE",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
-
-        if (response.ok) {
-          refresh();
-        } else {
-          console.log("Delete request failed with status:", response.status);
-        }
-      }
-    } catch (error) {
-      console.log("An error occurred during the delete request:", error);
-    }
-  }());
-    
-  },);
-
-    return (
+  return (
     <center className="h-screen mt-28 flex flex-col gap-4">
       <p>
         <BsBagCheckFill size={80} />

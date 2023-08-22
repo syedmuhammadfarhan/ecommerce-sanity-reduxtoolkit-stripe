@@ -1,4 +1,4 @@
-import { IProduct, getProductData } from "@/components/cmsFetch";
+import { addProductType } from "@/ReduxStore/slice/slice";
 import { cartItems } from "@/lib/drizzle";
 import { cookies } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
@@ -12,9 +12,8 @@ const stripe = new Stripe(key, {
 
 export async function POST(request: NextRequest) {
     const cookiesuid = cookies().get("user_id")?.value;
-    const data: IProduct[] = await getProductData(); 
-    const res: cartItems[] | any = await request.json();
-    const resFilter = res.filter((items: cartItems) => items.user_id === cookiesuid)
+    const res: addProductType[] | any = await request.json();
+    const resFilter = res.filter((items: addProductType) => items.user_id === cookiesuid)
 
 
 //       const filterCMS = resFilter.map((resitems:any) => data.filter((dataitems) => dataitems._id === resitems.product_id))

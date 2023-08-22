@@ -167,7 +167,7 @@ export default function Cart({
                   <div className="test-sm md:text-md flex justify-between border-b">
                     <p className="test-sm md:text-md">Sub Total:</p>
                     <p className="text-red-600 font-bold animate-pulse">
-                      {totalAmount}
+                      PKR {totalAmount}
                     </p>
                   </div>
                   <div

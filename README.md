@@ -1,6 +1,6 @@
 # Full Stack E-Commerce Website (Hackathon-1)
 
-This is a Full satck Ecommerce website built for the learning purpose of the state of the art Technologies.
+This is a Full satck E-commerce website built for the learning purposes of state-of-the-art Technologies.
 
 ## Stacks
 <p align="left">
@@ -10,21 +10,24 @@ This is a Full satck Ecommerce website built for the learning purpose of the sta
 - NEXT.js 13
 - Tailwind CSS
 - Sanity as Content Management System (CMS)
-- Redux Toolkit for store and state managment
+- Redux Toolkit for store and State Management
 - Stripe for payment integration
+- React icons
+- React Hot Toast
+- Drizzle ORM
 
 
 
 ### Link
 
-Website is deployed in vercel.
+The website is deployed in Vercel.
 - [Live URL](https://ecommerce-sanity-reduxtoolkit-stripe.vercel.app/)
 
 
 ### Screenshot
 
 ![Screenshot of homepage of Dine Market e-commerce](/public/Screenshot.png)
-Search bar is for the styling purpose only
+The search bar is for styling purpose only
 
 
 
